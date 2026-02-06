@@ -2,7 +2,7 @@
 # 프로그래머스 (unknown)
 # 문제 링크: https://school.programmers.co.kr/learn/courses/30/lessons/133025
 # 작성자: 최상원
-# 작성일: 2026. 02. 06. 09:14:26
+# 작성일: 2026. 02. 06. 09:17:40
 
 -- 코드를 입력하세요
 SELECT
@@ -12,3 +12,4 @@ join ICECREAM_INFO ii
 on f.FLAVOR = ii.FLAVOR
 where f.TOTAL_ORDER > 3000
 and ii.INGREDIENT_TYPE like '%fruit%'
+order by f.TOTAL_ORDER desc
